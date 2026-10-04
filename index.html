@@ -4,91 +4,114 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Наталья Силюгина — продвижение онлайн-школ и локального бизнеса</title>
-  <meta name="description" content="Реклама ВКонтакте и Telegram, оформление сообществ, чат-боты, сайты и нейрофото для онлайн-школ и локального бизнеса.">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="description" content="Реклама ВКонтакте и Telegram, автоматизация бизнеса, оформление сообществ, чат-боты, сайты и нейрофото для онлайн-школ и локального бизнеса.">
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="button-animation.css">
+  <style>
+    .document-card{color:inherit;text-decoration:none;transition:border-color 200ms ease,transform 200ms ease}
+    .document-card:hover{border-color:var(--accent);transform:rotate(-4deg) translateY(-4px)}
+    .document-back:hover{transform:rotate(6deg) translateY(-4px)}
+    .card,.steps li,.final-cta{position:relative;overflow:hidden;box-shadow:0 22px 42px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.07),inset 0 -1px 0 rgba(0,0,0,.35);transform:translateZ(0);transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease}
+    .card::after,.steps li::after,.final-cta::after{position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.055),transparent 36%,rgba(88,184,236,.035));content:""}
+    .card:hover,.steps li:hover{z-index:1;border-color:rgba(88,184,236,.42);box-shadow:0 30px 55px rgba(0,0,0,.34),0 12px 24px rgba(24,111,164,.12),inset 0 1px 0 rgba(255,255,255,.11);transform:translateY(-7px) perspective(900px) rotateX(1.5deg)}
+    .service-icon{display:grid;place-items:center;width:48px;height:48px;margin-bottom:38px;border:1px solid rgba(88,184,236,.38);border-radius:14px;background:linear-gradient(145deg,rgba(88,184,236,.16),rgba(17,40,68,.4));box-shadow:0 10px 24px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.12);color:#77cdf7}
+    .service-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .service-card:nth-child(2n) .service-icon{color:#93a9ff;background:linear-gradient(145deg,rgba(105,126,255,.18),rgba(17,40,68,.4))}
+    .service-card:nth-child(3n) .service-icon{color:#65e0d1;background:linear-gradient(145deg,rgba(66,205,187,.16),rgba(17,40,68,.4))}
+    .site-header>.button{position:relative;overflow:hidden;border-color:rgba(119,205,247,.38);box-shadow:0 0 20px rgba(88,184,236,.08)}
+    .site-header>.button::after{position:absolute;top:-60%;left:-45%;width:28%;height:220%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);content:"";transform:rotate(18deg);animation:header-button-shine 5.5s ease-in-out infinite}
+    @keyframes header-button-shine{0%,72%{left:-45%;opacity:0}76%{opacity:1}92%{left:120%;opacity:.8}100%{left:120%;opacity:0}}
+    .socials a.social-image-link{overflow:hidden;border:0;background:#06215b;box-shadow:0 8px 18px rgba(0,73,178,.28),inset 0 1px 0 rgba(255,255,255,.2);transition:transform 180ms ease,filter 180ms ease,box-shadow 180ms ease}
+    .socials a.social-image-link:hover{border:0;filter:brightness(1.12);box-shadow:0 11px 24px rgba(0,118,255,.38);transform:translateY(-3px)}
+    .social-icon-sprite{display:block;width:100%;height:100%;border-radius:50%;background-image:url('assets/icons-vk-max-03.png');background-repeat:no-repeat;background-size:200% 100%}
+    .social-icon-vk{background-position:left center}
+    .social-icon-max{background-position:right center}
+    @media (prefers-reduced-motion:reduce){.card,.steps li,.final-cta{transition:none}.card:hover,.steps li:hover{transform:none}}
+    @media (prefers-reduced-motion:reduce){.site-header>.button::after{animation:none}}
+  </style>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="На первый экран"><img src="assets/favicon.png" alt=""><span>Наталья Силюгина</span></a>
-    <nav aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#work">Работы</a><a href="#prices">Цены</a></nav>
-    <a class="button button-small button-outline" href="#contacts">Связаться</a>
+    <a class="brand" href="#top" aria-label="На первый экран"><img src="assets/favicon.png?v=2" alt=""><span>Наталья Силюгина</span></a>
+    <nav aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#process">План работ</a><a href="#prices">Цены</a></nav>
+    <a class="button button-small button-outline" href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">Написать</a>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">ОНЛАЙН-ШКОЛАМ И ЛОКАЛЬНОМУ БИЗНЕСУ</p>
-        <h1>Настраиваю рекламу и готовлю место для обращения</h1>
-        <p class="lead">ВКонтакте и Telegram, сообщество, лендинг и чат-бот — отдельно или в одной связке.</p>
-        <div class="actions"><a class="button button-light" href="#contacts">Связаться</a><a class="button button-outline" href="#audience">Узнать подробнее</a></div>
+        <p class="eyebrow">МАРКЕТОЛОГ ВК И TELEGRAM</p>
+        <h1>Помогаю бизнесу стать заметнее и получать обращения</h1>
+        <p class="lead">Реклама, сообщество, лендинг, чат-бот<br>для онлайн-школ и локального бизнеса</p>
+        <div class="actions"><a class="button button-light" href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">Написать</a><a class="button button-outline" href="#audience">Узнать подробнее</a></div>
         <p class="proof"><strong>5+</strong><span>лет в продвижении</span></p>
       </div>
       <div class="hero-visual" aria-hidden="true"><img src="assets/hero-natalia.jpg" alt=""></div>
     </section>
 
     <section class="section" id="audience">
-      <div class="section-heading"><p class="eyebrow">ДВА СЦЕНАРИЯ</p><h2>Два бизнеса — два разных пути клиента</h2><p>Выберите свой сценарий — состав работ будет разным.</p></div>
+      <div class="section-heading"><p class="eyebrow">КОМУ ПОМОГАЮ</p><h2>Чтобы о бизнесе узнали, поняли предложение и написали</h2><p>Подбираю путь клиента под вашу задачу — без лишних инструментов и ненужных расходов</p></div>
       <div class="cards cards-three">
-        <article class="card"><span class="card-number">01</span><h3>Онлайн-школа</h3><p>Реклама ведёт на страницу, в сообщество или чат-бот, где человек узнаёт о программе и оставляет обращение.</p></article>
-        <article class="card"><span class="card-number">02</span><h3>Локальный бизнес</h3><p>Реклама ведёт к сообщению, записи или знакомству с услугой рядом с клиентом.</p></article>
-        <article class="card"><span class="card-number">03</span><h3>Нет готового маршрута</h3><p>Разберём, что уже есть, куда сейчас ведёте людей и чего не хватает.</p></article>
+        <article class="card"><span class="card-number">01</span><h3>Онлайн-школам</h3><p>Выстраиваю путь клиента от первого рекламного показа до заявки на курс, вебинар или консультацию.</p></article>
+        <article class="card"><span class="card-number">02</span><h3>Локальному бизнесу</h3><p>Выстраиваю путь клиента от знакомства с услугой до сообщения, звонка или запроса на запись.</p></article>
+        <article class="card"><span class="card-number">03</span><h3>Бизнесу без выстроенного продвижения</h3><p>Разбираю, что уже работает, нахожу слабое место и собираю понятный путь до обращения.</p></article>
       </div>
     </section>
 
     <section class="section section-soft">
-      <div class="split-heading"><div><p class="eyebrow">ПОСЛЕ КЛИКА</p><h2>Реклама не должна заканчиваться после клика</h2></div><p>Подготовим не только объявление, но и место, где человек продолжит знакомство с вами.</p></div>
+      <div class="split-heading"><div><p class="eyebrow">ПУТЬ КЛИЕНТА</p><h2>Одной рекламы недостаточно</h2></div><p>Человеку нужно быстро понять, чем вы полезны, довериться вам и легко связаться</p></div>
       <div class="result-list">
-        <div><strong>Для онлайн-школы</strong><span>Объявление → страница или сообщество → чат-бот или сообщение</span></div>
-        <div><strong>Для локального бизнеса</strong><span>Объявление → услуга и доверие → сообщение или запись</span></div>
-        <div><strong>Для отдельной задачи</strong><span>Креативы, сообщество, бот или сайт можно заказать без ведения рекламы</span></div>
+        <div><strong>Чтобы узнали</strong><span>Настраиваю рекламу ВКонтакте и Telegram для нужной аудитории.</span></div>
+        <div><strong>Чтобы заинтересовались</strong><span>Готовлю объявления, сообщество или лендинг с понятным предложением.</span></div>
+        <div><strong>Чтобы написали</strong><span>Подключаю сообщения, формы и чат-бота, а автоматизация помогает не терять обращения.</span></div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-heading"><p class="eyebrow">КАК НАЧИНАЕМ</p><h2>Сначала разбираемся, потом выбираем инструменты</h2><p>Вы заранее понимаете, что именно делаем и зачем это нужно.</p></div>
+    <section class="section" id="process">
+      <div class="section-heading"><p class="eyebrow">КАК РАБОТАЕМ</p><h2>Сначала задача — потом инструменты</h2><p>Вы заранее понимаете, что будем делать, зачем и к какому результату идём</p></div>
       <ol class="steps">
-        <li><span>01</span><h3>Задача</h3><p>Что продвигаете, кому и куда сейчас ведёте людей.</p></li>
-        <li><span>02</span><h3>Исходная точка</h3><p>Какие материалы, площадки и настройки уже есть.</p></li>
-        <li><span>03</span><h3>Состав работ</h3><p>Предлагаю, что нужно сделать, а что пока не требуется.</p></li>
-        <li><span>04</span><h3>Подготовка и запуск</h3><p>Создаю материалы, согласую и подключаю выбранные инструменты.</p></li>
+        <li><span>01</span><h3>Разбираю задачу</h3><p>Что вы предлагаете, кому и какое действие должен сделать человек.</p></li>
+        <li><span>02</span><h3>Проверяю основу</h3><p>Смотрю рекламу, площадки, материалы и путь клиента до обращения.</p></li>
+        <li><span>03</span><h3>Предлагаю решение</h3><p>Объясняю, что нужно сделать сейчас, а на чём можно сэкономить.</p></li>
+        <li><span>04</span><h3>Запускаю воронку</h3><p>Соединяю рекламу, площадку и способ связи, затем проверяю путь до обращения.</p></li>
       </ol>
     </section>
 
     <section class="section section-soft" id="services">
-      <div class="section-heading"><p class="eyebrow">УСЛУГИ</p><h2>Что можно поручить мне</h2><p>Одну услугу или весь маршрут клиента после рекламы.</p></div>
+      <div class="section-heading"><p class="eyebrow">УСЛУГИ</p><h2>Что можно поручить мне</h2><p>Одну задачу или всю связку — от первого показа до сообщения клиента</p></div>
       <div class="cards service-grid">
-        <article class="card service-card"><i>🎯</i><h3>Реклама ВКонтакте</h3><p>Настройка и ведение рекламных кампаний.</p></article>
-        <article class="card service-card"><i>✈️</i><h3>Реклама в Telegram</h3><p>Настройка и ведение размещений.</p></article>
-        <article class="card service-card"><i>🎨</i><h3>Креативы и нейрофото</h3><p>Изображения для рекламы и оформления. Можно заказать отдельно.</p></article>
-        <article class="card service-card"><i>👥</i><h3>Сообщество ВКонтакте</h3><p>Оформление, настройка и ведение.</p></article>
-        <article class="card service-card"><i>🤖</i><h3>Чат-боты и Senler</h3><p>Настройка и ведение ботов и рассылок.</p></article>
-        <article class="card service-card"><i>💻</i><h3>Лендинги и сайты</h3><p>Страница, куда можно привести человека из рекламы.</p></article>
+        <article class="card service-card"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11v2a2 2 0 0 0 2 2h2l3 5h3l-2.5-5H12l7 3V6l-7 3H5a2 2 0 0 0-2 2Z"/><path d="M19 10a2 2 0 0 1 0 4"/></svg></span><h3>Реклама ВКонтакте</h3><p>Нахожу аудиторию, готовлю объявления и направляю людей на следующий этап воронки.</p></article>
+        <article class="card service-card"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></span><h3>Реклама в Telegram</h3><p>Подбираю площадки и организую размещения, которые приводят нужных людей.</p></article>
+        <article class="card service-card"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m4 17 4-4 3 3 3-3 6 6"/><path d="M18 2v4M16 4h4"/></svg></span><h3>Креативы и нейрофото</h3><p>Создаю изображения, которые привлекают внимание и поддерживают ваше предложение.</p></article>
+        <article class="card service-card"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-2a5 5 0 0 1 10 0v2M14 20v-1.5a4 4 0 0 1 7-2.6V20"/></svg></span><h3>Сообщество ВКонтакте</h3><p>Оформляю страницу так, чтобы человек быстро понял, чем вы можете помочь.</p></article>
+        <article class="card service-card"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="13" rx="4"/><path d="M9 2h6M12 2v4M8 12h.01M16 12h.01M9 16h6M4 10H2M22 10h-2"/></svg></span><h3>Чат-боты и Senler</h3><p>Настраиваю ответы, рассылки и путь человека от интереса до обращения.</p></article>
+        <article class="card service-card"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/><path d="M7 13h5M7 16h9"/></svg></span><h3>Лендинги и сайты</h3><p>Собираю понятную страницу, которая объясняет предложение и ведёт к заявке.</p></article>
+        <article class="card service-card"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.5 8l3.3 7.6M16.5 8l-3.3 7.6"/><path d="M12 10v3"/></svg></span><h3>Автоматизация бизнеса</h3><p>Связываю формы, сообщения и рабочие процессы, чтобы не терять заявки и время.</p></article>
       </div>
-      <div class="section-action"><a class="button button-light" href="#contacts">Связаться</a></div>
+      <div class="section-action"><a class="button button-light" href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">Написать</a></div>
     </section>
 
     <section class="section work" id="work">
-      <div><p class="eyebrow">ПОДГОТОВКА ЗАПУСКА</p><h2>Что выясняю до настройки рекламы</h2><p>Бриф помогает собрать исходные данные и не принимать решения вслепую.</p><ul><li>О продукте и аудитории</li><li>О текущем маршруте клиента</li><li>О материалах и ограничениях</li></ul></div>
-      <div class="document-stack" aria-label="Два готовых документа"><div class="document-card document-back"><span>БРИФ-ПЛЮС</span><strong>Расширенная версия</strong><small>Подробный сбор исходных данных</small></div><div class="document-card"><span>БРИФ</span><strong>Запуск рекламы</strong><small>Основные вопросы перед стартом</small></div></div>
+      <div><p class="eyebrow">ПЕРЕД ЗАПУСКОМ</p><h2>Собираю основу, чтобы не действовать вслепую</h2><p>Бриф помогает понять задачу, увидеть ограничения и выбрать подходящее решение</p><ul><li>Что вы предлагаете и кому</li><li>Как человек сейчас приходит к обращению</li><li>Какие материалы и площадки уже есть</li></ul></div>
+      <div class="document-stack" aria-label="Два готовых документа"><a class="document-card document-back" href="assets/brief-plus.pdf" target="_blank" rel="noopener"><span>БРИФ-ПЛЮС</span><strong>Расширенная версия</strong><small>Открыть подробный бриф ↗</small></a><a class="document-card" href="assets/brief-basic.pdf" target="_blank" rel="noopener"><span>БРИФ</span><strong>Запуск рекламы</strong><small>Открыть основной бриф ↗</small></a></div>
     </section>
 
     <section class="section section-soft about">
       <div class="about-photo"><img src="assets/about-natalia.jpg" alt="Наталья Силюгина"></div>
-      <div><p class="eyebrow">ОБО МНЕ</p><h2>Наталья Силюгина, таргетолог-маркетолог</h2><p>Могу взять отдельную задачу или собрать рекламу, площадку и способ связи в одном проекте.</p><div class="about-facts"><div><strong>5+</strong><span>лет в продвижении</span></div><div><strong>ВК · TG</strong><span>рекламные площадки</span></div></div></div>
+      <div><p class="eyebrow">ОБО МНЕ</p><h2>Наталья Силюгина, маркетолог ВК и Telegram</h2><p>Более пяти лет выстраиваю путь клиента от первого рекламного показа до обращения. Моя задача — собрать и настроить воронку. Продажи и закрытие сделки остаются на стороне бизнеса.</p><div class="about-facts"><div><strong>5+</strong><span>лет в продвижении</span></div><div><strong>ВК · TG</strong><span>основные площадки</span></div></div></div>
     </section>
 
     <section class="section" id="prices">
-      <div class="section-heading"><p class="eyebrow">СТОИМОСТЬ</p><h2>Стоимость услуг с готовым ориентиром</h2><p>Для остальных работ цена зависит от состава и обсуждается до начала.</p></div>
+      <div class="section-heading"><p class="eyebrow">СТОИМОСТЬ</p><h2>Ориентиры по стоимости</h2><p>Точный состав работ и итоговую сумму согласуем до начала проекта</p></div>
       <div class="price-list">
-        <div><span>Консультация</span><strong>7 000 ₽</strong></div><div><span>Оформление сообщества</span><strong>от 8 000 ₽</strong></div><div><span>Таргет ВКонтакте</span><strong>от 35 000 ₽</strong></div><div><span>Полное продвижение в ВК</span><strong>от 80 000 ₽</strong></div><div><span>Оформление сайта</span><strong>5 000–15 000 ₽</strong></div><div><span>Создание нейрофото</span><strong>после обсуждения</strong></div>
+        <div><span>Консультация</span><strong>7 000 ₽</strong></div><div><span>Оформление сообщества</span><strong>от 8 000 ₽</strong></div><div><span>Реклама ВКонтакте</span><strong>от 35 000 ₽</strong></div><div><span>Реклама в Telegram</span><strong>от 35 000 ₽</strong></div><div><span>Чат-боты и Senler</span><strong>от 20 000 ₽</strong></div><div><span>Комплекс работ без автоматизации</span><strong>от 80 000 ₽</strong></div><div><span>Лендинг или сайт</span><strong>5 000–15 000 ₽</strong></div><div><span>Создание нейрофото</span><strong>после обсуждения</strong></div><div><span>Автоматизация бизнеса</span><strong>от 80 000 ₽</strong></div>
       </div>
-      <div class="section-action"><a class="button button-light" href="#contacts">Уточнить стоимость</a></div>
+      <div class="section-action"><a class="button button-light" href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">Уточнить стоимость</a></div>
     </section>
 
-    <section class="final-cta" id="contacts"><div><p class="eyebrow">СЛЕДУЮЩИЙ ШАГ</p><h2>Расскажите, что продвигаете и куда ведёте людей</h2><p>Контакты передам лично. Я посмотрю на задачу и предложу, с какого шага начать.</p></div><span class="button button-light">Контакты — лично</span></section>
+    <section class="final-cta" id="contacts"><div><p class="eyebrow">СЛЕДУЮЩИЙ ШАГ</p><h2>Расскажите о задаче — предложу структуру воронки</h2><p>Напишите, чем занимаетесь и до какого действия нужно довести человека. Я посмотрю, какие этапы и инструменты потребуются</p></div><a class="button button-light" href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">Написать ВКонтакте</a></section>
   </main>
-  <footer><span>Силюгина Наталья · таргетолог-маркетолог</span></footer>
+  <footer><span>Наталья Силюгина · маркетолог ВК и Telegram</span><div class="socials"><a class="social-image-link" href="https://vk.ru/nataliasilyugina" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте — личная страница" title="ВКонтакте"><span class="social-icon-sprite social-icon-vk" aria-hidden="true"></span></a><a class="social-image-link" href="https://max.ru/u/f9LHodD0cOJ1ixdyweM5UGoE7qZbjzHQOYJJ0mRqMUXzZUCjxYeYmMKhHDw" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX" title="MAX"><span class="social-icon-sprite social-icon-max" aria-hidden="true"></span></a></div></footer>
 </body>
 </html>
