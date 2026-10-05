@@ -32,13 +32,25 @@
     .social-icon-vk{background-position:left center}
     .social-icon-max{background-position:right center}
     .footer-contact{display:grid;gap:10px;justify-items:end}.footer-scan{font-size:.82rem}.socials .qr-link{display:grid;width:auto;height:auto;gap:8px;justify-items:center;border:0;border-radius:16px;color:var(--text)}.qr-code{position:relative;display:block;width:112px;padding:8px;border-radius:14px;background:#fff;box-shadow:0 12px 28px rgba(0,0,0,.28)}.qr-code>img{width:100%;border-radius:7px}.qr-icon{position:absolute;top:50%;left:50%;width:34px;height:34px;border:4px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.25);transform:translate(-50%,-50%)}.qr-label{font-size:.82rem;font-weight:800}.socials .qr-link:hover{color:var(--accent);transform:translateY(-3px)}
-    .cookie-banner{position:fixed;z-index:100;right:20px;bottom:20px;left:20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;max-width:920px;margin:auto;padding:22px 24px;border:1px solid rgba(255,255,255,.18);border-radius:22px;background:rgba(11,24,40,.97);box-shadow:0 24px 70px rgba(0,0,0,.55);backdrop-filter:blur(18px)}.cookie-banner[hidden]{display:none}.cookie-banner p{margin:0;color:var(--text);font-size:.95rem}.cookie-banner small{display:block;margin-top:5px;color:var(--muted)}.cookie-actions{display:flex;gap:10px}.cookie-actions button,.cookie-settings{min-height:44px;padding:0 18px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--text);font:inherit;font-weight:800;cursor:pointer}.cookie-actions .cookie-accept{border-color:#fff;background:#fff;color:#06111f}.cookie-settings{position:fixed;z-index:90;right:18px;bottom:18px;min-height:38px;padding:0 14px;background:rgba(11,24,40,.92);font-size:.78rem}.cookie-settings[hidden]{display:none}@media(max-width:600px){.cookie-banner{grid-template-columns:1fr;gap:16px;padding:20px}.cookie-actions{display:grid;grid-template-columns:1fr}.cookie-actions button{width:100%}}
     @media (prefers-reduced-motion:reduce){.card,.steps li,.final-cta{transition:none}.card:hover,.steps li:hover{transform:none}}
     @media (prefers-reduced-motion:reduce){.site-header>.button::after{animation:none}}
     .eyebrow{font-size:13px}
   </style>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
+    })(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113429019','ym');
+
+    ym(113429019,'init',{ssr:true,webvisor:true,clickmap:true,ecommerce:'dataLayer',referrer:document.referrer,url:location.href,accurateTrackBounce:true,trackLinks:true});
+  </script>
+  <!-- /Yandex.Metrika counter -->
 </head>
 <body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/113429019" style="position:absolute;left:-9999px" alt=""></div></noscript>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="На первый экран"><img src="assets/favicon.png" alt=""><span>Наталья Силюгина</span></a>
     <nav aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#process">План работ</a><a href="#prices">Цены</a></nav>
@@ -120,46 +132,5 @@
     <section class="final-cta" id="contacts"><div><p class="eyebrow кикер">СЛЕДУЮЩИЙ ШАГ</p><h2>Расскажите о&nbsp;задаче — предложу структуру воронки</h2><p>Напишите, чем занимаетесь и&nbsp;до какого действия нужно довести человека. Я&nbsp;посмотрю, какие этапы и&nbsp;инструменты потребуются</p></div><a class="button button-light" href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">Написать ВКонтакте</a></section>
   </main>
   <footer><span>Наталья Силюгина · маркетолог ВК и&nbsp;Telegram</span><div class="footer-contact"><span class="footer-scan">Наведите камеру телефона</span><div class="socials"><a class="qr-link" href="https://vk.ru/nataliasilyugina" target="_blank" rel="noopener noreferrer" aria-label="Открыть ВКонтакте"><span class="qr-code"><img src="assets/qr-vk.png" alt="QR-код ВКонтакте"><span class="qr-icon social-icon-sprite social-icon-vk" aria-hidden="true"></span></span><span class="qr-label">ВКонтакте</span></a><a class="qr-link" href="https://max.ru/u/f9LHodD0cOJ1ixdyweM5UGoE7qZbjzHQOYJJ0mRqMUXzZUCjxYeYmMKhHDw" target="_blank" rel="noopener noreferrer" aria-label="Открыть MAX"><span class="qr-code"><img src="assets/qr-max.png" alt="QR-код MAX"><span class="qr-icon social-icon-sprite social-icon-max" aria-hidden="true"></span></span><span class="qr-label">MAX</span></a></div></div></footer>
-  <section class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Настройки cookie" hidden>
-    <p>Разрешить аналитические cookie?<small>Они помогают понять, как посетители пользуются сайтом. Для аналитики используется Яндекс&nbsp;Метрика с Вебвизором.</small></p>
-    <div class="cookie-actions"><button type="button" id="cookie-essential">Только необходимые</button><button type="button" class="cookie-accept" id="cookie-accept">Разрешить</button></div>
-  </section>
-  <button type="button" class="cookie-settings" id="cookie-settings" hidden>Настройки cookie</button>
-  <script>
-    (function(){
-      var key='natalia_cookie_consent_v1';
-      var banner=document.getElementById('cookie-banner');
-      var settings=document.getElementById('cookie-settings');
-      var started=false;
-
-      function startMetrika(){
-        if(started){return;}
-        started=true;
-        (function(m,e,t,r,i,k,a){
-          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-          m[i].l=1*new Date();
-          for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
-          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
-        })(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113429019','ym');
-        ym(113429019,'init',{ssr:true,webvisor:true,clickmap:true,ecommerce:'dataLayer',referrer:document.referrer,url:location.href,accurateTrackBounce:true,trackLinks:true});
-      }
-
-      function save(choice){
-        localStorage.setItem(key,choice);
-        banner.hidden=true;
-        settings.hidden=false;
-        if(choice==='accepted'){startMetrika();}
-      }
-
-      document.getElementById('cookie-accept').addEventListener('click',function(){save('accepted');});
-      document.getElementById('cookie-essential').addEventListener('click',function(){save('essential');});
-      settings.addEventListener('click',function(){banner.hidden=false;settings.hidden=true;});
-
-      var choice=localStorage.getItem(key);
-      if(choice==='accepted'){startMetrika();settings.hidden=false;}
-      else if(choice==='essential'){settings.hidden=false;}
-      else{banner.hidden=false;}
-    })();
-  </script>
 </body>
 </html>
