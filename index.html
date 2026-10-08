@@ -23,9 +23,10 @@
     .service-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
     .service-card:nth-child(2n) .service-icon{color:#93a9ff;background:linear-gradient(145deg,rgba(105,126,255,.18),rgba(17,40,68,.4))}
     .service-card:nth-child(3n) .service-icon{color:#65e0d1;background:linear-gradient(145deg,rgba(66,205,187,.16),rgba(17,40,68,.4))}
-    .site-header>.button{position:relative;overflow:hidden;border-color:rgba(119,205,247,.38);box-shadow:0 0 20px rgba(88,184,236,.08)}
+    .site-header>.button{position:relative;overflow:hidden;appearance:none;border:0;background:linear-gradient(100deg,#2f9be0,#77cdf7,#b3e9ff,#58b8ec,#2f9be0);background-size:250% 100%;box-shadow:0 0 24px rgba(88,184,236,.45);color:#06111f;animation:header-button-flow 7s linear infinite}
     .site-header>.button::after{position:absolute;top:-60%;left:-45%;width:28%;height:220%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);content:"";transform:rotate(18deg);animation:header-button-shine 5.5s ease-in-out infinite}
     @keyframes header-button-shine{0%,72%{left:-45%;opacity:0}76%{opacity:1}92%{left:120%;opacity:.8}100%{left:120%;opacity:0}}
+    @keyframes header-button-flow{to{background-position:250% 0}}
     .socials a.social-image-link{overflow:hidden;border:0;background:#06215b;box-shadow:0 8px 18px rgba(0,73,178,.28),inset 0 1px 0 rgba(255,255,255,.2);transition:transform 180ms ease,filter 180ms ease,box-shadow 180ms ease}
     .socials a.social-image-link:hover{border:0;filter:brightness(1.12);box-shadow:0 11px 24px rgba(0,118,255,.38);transform:translateY(-3px)}
     .social-icon-sprite{display:block;width:100%;height:100%;border-radius:50%;background-image:url('assets/icons-vk-max-03.webp');background-repeat:no-repeat;background-size:200% 100%}
@@ -33,7 +34,7 @@
     .social-icon-max{background-position:right center}
     .footer-contact{display:grid;gap:10px;justify-items:end}.footer-scan{font-size:.82rem}.socials .qr-link{display:grid;width:auto;height:auto;gap:8px;justify-items:center;border:0;border-radius:16px;color:var(--text)}.qr-code{position:relative;display:block;width:112px;padding:8px;border-radius:14px;background:#fff;box-shadow:0 12px 28px rgba(0,0,0,.28)}.qr-code>img{width:100%;border-radius:7px}.qr-icon{position:absolute;top:50%;left:50%;width:34px;height:34px;border:4px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.25);transform:translate(-50%,-50%)}.qr-label{font-size:.82rem;font-weight:800}.socials .qr-link:hover{color:var(--accent);transform:translateY(-3px)}
     @media (prefers-reduced-motion:reduce){.card,.steps li,.final-cta{transition:none}.card:hover,.steps li:hover{transform:none}}
-    @media (prefers-reduced-motion:reduce){.site-header>.button::after{animation:none}}
+    @media (prefers-reduced-motion:reduce){.site-header>.button,.site-header>.button::after{animation:none}}
     .eyebrow{font-size:13px}
   </style>
   <!-- Yandex.Metrika counter -->
