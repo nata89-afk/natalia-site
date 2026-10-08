@@ -23,11 +23,9 @@
     .service-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
     .service-card:nth-child(2n) .service-icon{color:#93a9ff;background:linear-gradient(145deg,rgba(105,126,255,.18),rgba(17,40,68,.4))}
     .service-card:nth-child(3n) .service-icon{color:#65e0d1;background:linear-gradient(145deg,rgba(66,205,187,.16),rgba(17,40,68,.4))}
-    .site-header>.button{position:relative;overflow:hidden;appearance:none;border:0;background:linear-gradient(145deg,#77cdf7,#2f9be0);color:#06111f;animation:header-button-breathe 3.2s ease-in-out infinite;transition:filter .2s ease}
-    .site-header>.button:hover{filter:brightness(1.08)}
-    .site-header>.button::after{position:absolute;top:-60%;left:-45%;width:28%;height:220%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);content:"";transform:rotate(18deg);transition:left .7s ease}
-    .site-header>.button:hover::after{left:130%}
-    @keyframes header-button-breathe{0%,100%{box-shadow:0 0 14px rgba(88,184,236,.25)}50%{box-shadow:0 0 30px rgba(88,184,236,.6)}}
+    .site-header>.button{position:relative;overflow:hidden;appearance:none;box-shadow:0 6px 18px rgba(0,0,0,.28)}
+    .site-header>.button::after{position:absolute;top:-60%;left:-45%;width:28%;height:220%;background:linear-gradient(90deg,transparent,rgba(88,184,236,.4),transparent);content:"";transform:rotate(18deg);animation:header-button-shine 6s ease-in-out infinite}
+    @keyframes header-button-shine{0%,72%{left:-45%;opacity:0}76%{opacity:1}92%{left:120%;opacity:.8}100%{left:120%;opacity:0}}
     .socials a.social-image-link{overflow:hidden;border:0;background:#06215b;box-shadow:0 8px 18px rgba(0,73,178,.28),inset 0 1px 0 rgba(255,255,255,.2);transition:transform 180ms ease,filter 180ms ease,box-shadow 180ms ease}
     .socials a.social-image-link:hover{border:0;filter:brightness(1.12);box-shadow:0 11px 24px rgba(0,118,255,.38);transform:translateY(-3px)}
     .social-icon-sprite{display:block;width:100%;height:100%;border-radius:50%;background-image:url('assets/icons-vk-max-03.webp');background-repeat:no-repeat;background-size:200% 100%}
@@ -56,7 +54,7 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="На первый экран"><img src="assets/favicon.png" alt=""><span>Наталья Силюгина</span></a>
     <nav aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#process">План работ</a><a href="#prices">Цены</a></nav>
-    <button class="button button-small button-outline" type="button" id="header-write-toggle" aria-expanded="false" aria-controls="header-write-menu">Написать</button>
+    <button class="button button-small button-light" type="button" id="header-write-toggle" aria-expanded="false" aria-controls="header-write-menu">Написать</button>
     <span class="header-menu" id="header-write-menu" hidden><a href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">ВКонтакте</a><a href="https://max.ru/u/f9LHodD0cOJ1ixdyweM5UGoE7qZbjzHQOYJJ0mRqMUXzZUCjxYeYmMKhHDw" target="_blank" rel="noopener noreferrer">MAX</a></span>
   </header>
 
