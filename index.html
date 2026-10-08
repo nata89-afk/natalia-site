@@ -54,7 +54,8 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="На первый экран"><img src="assets/favicon.png" alt=""><span>Наталья Силюгина</span></a>
     <nav aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#process">План работ</a><a href="#prices">Цены</a></nav>
-    <a class="button button-small button-outline" href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">Написать</a>
+    <button class="button button-small button-outline" type="button" id="header-write-toggle" aria-expanded="false" aria-controls="header-write-menu">Написать</button>
+    <span class="header-menu" id="header-write-menu" hidden><a href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">ВКонтакте</a><a href="https://max.ru/u/f9LHodD0cOJ1ixdyweM5UGoE7qZbjzHQOYJJ0mRqMUXzZUCjxYeYmMKhHDw" target="_blank" rel="noopener noreferrer">MAX</a></span>
   </header>
 
   <main id="top">
@@ -132,6 +133,6 @@
     <section class="final-cta" id="contacts"><div><p class="eyebrow кикер">СЛЕДУЮЩИЙ ШАГ</p><h2>Расскажите о&nbsp;задаче — предложу структуру воронки</h2><p>Напишите, чем занимаетесь и&nbsp;до какого действия нужно довести человека. Я&nbsp;посмотрю, какие этапы и&nbsp;инструменты потребуются</p></div><a class="button button-light" href="https://vk.ru/im/convo/-203432889?entrypoint=community_page&amp;tab=all" target="_blank" rel="noopener noreferrer">Написать ВКонтакте</a></section>
   </main>
   <footer><span>Наталья Силюгина · маркетолог ВК и&nbsp;Telegram</span><div class="footer-contact"><span class="footer-scan">Наведите камеру телефона</span><div class="socials"><a class="qr-link" href="https://vk.ru/nataliasilyugina" target="_blank" rel="noopener noreferrer" aria-label="Открыть ВКонтакте"><span class="qr-code"><img src="assets/qr-vk.png" alt="QR-код ВКонтакте"><span class="qr-icon social-icon-sprite social-icon-vk" aria-hidden="true"></span></span><span class="qr-label">ВКонтакте</span></a><a class="qr-link" href="https://max.ru/u/f9LHodD0cOJ1ixdyweM5UGoE7qZbjzHQOYJJ0mRqMUXzZUCjxYeYmMKhHDw" target="_blank" rel="noopener noreferrer" aria-label="Открыть MAX"><span class="qr-code"><img src="assets/qr-max.png" alt="QR-код MAX"><span class="qr-icon social-icon-sprite social-icon-max" aria-hidden="true"></span></span><span class="qr-label">MAX</span></a></div></div></footer>
-  <script>document.getElementById('write-toggle').addEventListener('click',function(){var o=document.getElementById('write-options');var show=o.hidden;o.hidden=!show;this.setAttribute('aria-expanded',String(show));});</script>
+  <script>function setupWriteMenu(t,m){var t=document.getElementById(t),m=document.getElementById(m);if(!t||!m)return;t.addEventListener('click',function(e){e.stopPropagation();var show=m.hidden;m.hidden=!show;t.setAttribute('aria-expanded',String(show));});document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)){m.hidden=true;t.setAttribute('aria-expanded','false');}});}setupWriteMenu('write-toggle','write-options');setupWriteMenu('header-write-toggle','header-write-menu');</script>
 </body>
 </html>
